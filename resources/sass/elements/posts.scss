@@ -1,7 +1,6 @@
 .posts {
     &__items {
         width: 100%;
-        margin-top: 2rem;
         td, th {
             padding: 15px;
             text-align: left;
@@ -13,5 +12,11 @@
     }
     &__buttons {
         white-space: nowrap;
+    }
+    &__image {
+        max-width: 200px;
+    }
+    &__noimage {
+        font-size: 1.2rem;
     }
 }

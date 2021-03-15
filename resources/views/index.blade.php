@@ -12,6 +12,7 @@
     <div class="content">
         <div class="posts">
             <h1>Posts</h1>
+            @if($posts->count() > 0)
             <table class="posts__items">
                 <thead>
                     <tr>
@@ -24,21 +25,30 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>
-                            <img src="" alt="">
-                        </td>
-                        <td>test</td>
-                        <td>test</td>
-                        <td>test</td>
-                        <td class="posts__buttons">
-                            <a href="/" class="button button_blue">Show</a>
-                            <a href="/" class="button button_green">Edit</a>
-                        </td>
-                    </tr>
+                    @foreach($posts as $post)
+                        <tr>
+                            <td>{{ $post->id }}</td>
+                            <td>
+                                @if($post->image)
+                                    <img src="{{ $post->image_path }}" class="posts__image" alt="{{ $post->title }}">
+                                @else
+                                    <span class="posts__noimage">No image</span>
+                                @endif
+                            </td>
+                            <td>{{ $post->title }}</td>
+                            <td>{{ $post->theme }}</td>
+                            <td>{{ $post->created_at }}</td>
+                            <td class="posts__buttons">
+                                <a href="/" class="button button_blue">Show</a>
+                                <a href="/" class="button button_green">Edit</a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
+            @else
+                No posts
+            @endif
         </div>
     </div>
 </body>
