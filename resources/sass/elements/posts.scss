@@ -1,0 +1,17 @@
+.posts {
+    &__items {
+        width: 100%;
+        margin-top: 2rem;
+        td, th {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid $gray;
+        }
+        tr:hover td {
+            background-color: rgba(0, 0, 0, .01);
+        }
+    }
+    &__buttons {
+        white-space: nowrap;
+    }
+}

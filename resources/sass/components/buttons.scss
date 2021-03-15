@@ -1,0 +1,21 @@
+.button {
+    padding: 1rem 3rem;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: $border-radius;
+    transition: $transition-time background-color;
+    &_blue {
+        background-color: $blue;
+        color: $white;
+        &:hover {
+            background-color: darken($blue, 20%);
+        }
+    }
+    &_green {
+        background-color: $green;
+        color: $white;
+        &:hover {
+            background-color: darken($green, 20%);
+        }
+    }
+}
