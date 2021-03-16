@@ -1,4 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
 body {
-  background: red;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  width: 1000px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+.content__button {
+  margin-bottom: 2rem;
+}
+
+.posts__items {
+  width: 100%;
+}
+
+.posts__items td,
+.posts__items th {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.posts__items tr:hover td {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.posts__buttons {
+  white-space: nowrap;
+}
+
+.posts__image {
+  max-width: 200px;
+}
+
+.posts__noimage {
+  font-size: 1.2rem;
+}
+
+.button {
+  padding: 1rem 3rem;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 5px;
+  transition: 0.5s background-color;
+  border: none;
+  cursor: pointer;
+}
+
+.button_blue {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.button_blue:hover {
+  background-color: #004a99;
+}
+
+.button_green {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.button_green:hover {
+  background-color: #145523;
+}
+
+.message {
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.message_error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.message_success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.post__date {
+  font-size: 1.4rem;
+}
+
+.post__image {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.form__annotation {
+  margin-bottom: 0.5rem;
+}
+
+.form__red {
+  color: #FF0000;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-family: Arial;
+}
+
+.form__input:focus {
+  border-color: #007bff;
+}
+
+.form__textarea {
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-family: Arial;
+}
+
+.form__textarea:focus {
+  border-color: #007bff;
 }
 

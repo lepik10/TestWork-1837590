@@ -30,4 +30,14 @@ class PostFactory extends Factory
         ];
 
     }
+
+    public function dummy()
+    {
+        return [
+            'title' => 'test title',
+            'theme' => 'test theme',
+            'image' => rand(0, 1) ? $this->faker->image('storage/app/public/', 640, 480, null, false) : null,
+            'content' => 'test content test content test content test content test content test content',
+        ];
+    }
 }

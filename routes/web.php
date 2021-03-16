@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('/', 'PostController');
+Route::get('/', 'PostController@index')->name('posts.index');
+Route::resource('/posts', 'PostController')->except('index');

@@ -10,6 +10,8 @@ class Post extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     public function getImagePathAttribute()
     {
         return Storage::url($this->image);

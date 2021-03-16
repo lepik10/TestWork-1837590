@@ -4,6 +4,8 @@
     vertical-align: top;
     border-radius: $border-radius;
     transition: $transition-time background-color;
+    border: none;
+    cursor: pointer;
     &_blue {
         background-color: $blue;
         color: $white;
@@ -16,6 +18,13 @@
         color: $white;
         &:hover {
             background-color: darken($green, 20%);
+        }
+    }
+    &_red {
+        background-color: $redan;
+        color: $white;
+        &:hover {
+            background-color: darken($redan, 20%);
         }
     }
 }
